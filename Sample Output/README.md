@@ -5,18 +5,15 @@ Ville Cantory, Yihan Zhou, Zitao Yang, Kun Xue, Roman Woolery
 Minimalist raytracer with global illumination via Monte-Carlo path-tracing support
 
 # Branches
-1. raytracer-original
-
+1. raytracer-original  
 Parallelizing only the ray generation, such that there is only one ray devoted to one thread, and then each thread will in turn operate over all intersections.
-2. raytracer-shared-const-mem
-
+2. raytracer-shared-const-mem  
 Using multiple threads for calculating collisions and the usage of shared / constant memory.
-3. raytracer-input-binning
-
+3. raytracer-input-binning  
 Use input binning.
 
 # Features
-Blinn-Phong shading with diffuse shading and specular highlights is featured. Reflections, refractions, and the fresnel effect are also included as per the Blinn-Phong shading model.
+Blinn-Phong shading with diffuse shading and specular highlights is featured. Reflections and refractions effect are also included as per the Blinn-Phong shading model.
 
 Monte-Carlo path tracing was used to provide global illumination, although the technique is inherently slow and prone to noise.
 Parallelization with OpenMP dramatically speeds this up.

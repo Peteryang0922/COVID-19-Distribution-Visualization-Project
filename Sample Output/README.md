@@ -12,12 +12,6 @@ Using multiple threads for calculating collisions and the usage of shared / cons
 3. raytracer-input-binning  
 Use input binning.
 
-# Features
-Blinn-Phong shading with diffuse shading and specular highlights is featured. Reflections and refractions effect are also included as per the Blinn-Phong shading model.
-
-Monte-Carlo path tracing was used to provide global illumination, although the technique is inherently slow and prone to noise.
-Parallelization with OpenMP dramatically speeds this up.
-
 # Command-line Options
 Compile with ``make clean``, ``make``, and run ``./raytracer --path path --output destination`` to run. Renders are written in the PPM format, which can be viewed with the ``display`` command.
 

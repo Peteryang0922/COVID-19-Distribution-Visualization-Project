@@ -10,7 +10,7 @@ Parallelizing only the ray generation, such that there is only one ray devoted t
 2. raytracer-shared-const-mem  
 Using multiple threads for calculating collisions and the usage of shared / constant memory.
 3. raytracer-input-binning  
-Use input binning.
+Using input binning.
 
 # Command-line Options
 Compile with ``make clean``, ``make``, and run ``./raytracer --path path --output destination`` to run. Renders are written in the PPM format, which can be viewed with the ``display`` command.
